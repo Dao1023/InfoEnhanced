@@ -1,0 +1,24 @@
+{
+    "baidu": {
+        "baiduReSou": {
+            "className": ["FYB_RD"],
+            "id": []
+        },
+        "xiangGuanWangZhan": {
+            "className": ["cr-content"],
+            "id": []
+        }
+    },
+    "csdn": {
+        "Ads": {
+            "className": ["www-home-content", "ad_fullWidth"],
+            "id": ["ad_unit"]
+        }
+    },
+    "zhihu": {
+        "Ads": {
+            "className": ["Pc-feedAd-container", "AdvertImg", "pic", "AdvertImg--isLoaded", "islider-outer"],
+            "id": ["container"]
+        }
+    }
+}
