@@ -1,4 +1,4 @@
-# InfoEvolved：网页优化插件
+# InfoEnhanced：网页优化插件
 
 本插件主要用于提高网页信息质量。
 
