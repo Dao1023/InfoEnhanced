@@ -1,11 +1,11 @@
 {
     "baidu": {
         "baiduReSou": {
-            "className": ["FYB_RD"],
+            "className": ["FYB_RD", "fc-f03c4d0d0032e8ec", "_8m8a62j"],
             "id": []
         },
         "xiangGuanWangZhan": {
-            "className": ["cr-content"],
+            "className": ["cr-content", "fc-f03c4d0d0032e8ec", "_8m8a62j"],
             "id": []
         }
     },
