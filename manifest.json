@@ -29,6 +29,7 @@
         "activeTab",
         "tabs",
         "https://www.baidu.com/s*",
-        "https://www.zhihu.com/*"
+        "https://www.zhihu.com/*",
+        "https://www.bilibili.com/*"
     ]
 }
