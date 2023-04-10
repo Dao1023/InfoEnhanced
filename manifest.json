@@ -23,8 +23,6 @@
                 "/static/package/jquery-3.6.3.min.js",
                 "/static/package/lodash.min.js",
                 "/static/package/Bilibili Evolved.user.js",
-                "/static/package/jieba.js",
-                "/static/package/dictionary.js",
                 "/static/js/content.js"
             ],
             "run_at": "document_start"
