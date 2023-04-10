@@ -1,7 +1,3 @@
-// todo:
-// 文本匹配算法
-// 可调节过滤强度 done
-
 $(function () {
     function editDistance(text_1, text_2, minValue) {
         // console.log(minValue);

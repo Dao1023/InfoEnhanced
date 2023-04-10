@@ -1,7 +1,3 @@
-// Browser Filering
-// v1.0
-// 2023.3.8
-
 $(function () {
     const adFilteringButton = document.getElementById("adFiltering");
     let box = document.getElementsByClassName("box")[0];
