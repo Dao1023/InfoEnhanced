@@ -207,4 +207,50 @@ $(function () {
     });
 
     // cosineSimilarity();
+
+
+
+// 在 content.js 将油猴脚本进行加载
+// 还有一个脚本在 background.js
+
+// 1. unsafeWindow 直接使用 window 即可
+
+// 2. GM_getValue
+function GM_getValue(key, defaultValue) {
+    return new Promise((resolve) => {
+      chrome.storage.sync.get([key], (result) => {
+        resolve(result[key] !== undefined ? result[key] : defaultValue);
+      });
+    });
+  }
+  
+  // 3. GM_setValue
+  function GM_setValue(key, value) {
+    return new Promise((resolve) => {
+      chrome.storage.sync.set({ [key]: value }, resolve);
+    });
+  }
+  
+  // 4. GM_deleteValue
+  function GM_deleteValue(key) {
+    return new Promise((resolve) => {
+      chrome.storage.sync.remove([key], resolve);
+    });
+  }
+  
+  // 5. GM_info
+  const GM_info = {
+    script: {
+      name: "My Chrome Extension",
+      version: "1.0",
+      description: "A simple Chrome Extension",
+    },
+  };
+  
+  // 6. GM_xmlhttpRequest
+  function GM_xmlhttpRequest({method, url}) {
+    return new Promise((resolve) => {
+      chrome.runtime.sendMessage({type: 'GM_xmlhttpRequest', method, url}, resolve);
+    });
+  }
 });

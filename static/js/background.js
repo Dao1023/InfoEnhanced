@@ -24,3 +24,20 @@ chrome.storage.local.get(['baseConfig'], function(result) {
 //         });
 //     }
 // });
+
+
+
+// 加载 GM_xmlhttpRequest 功能
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    if(request.type === 'GM_xmlhttpRequest') {
+      const xhr = new XMLHttpRequest();
+      xhr.open(request.method, request.url, true);
+      xhr.onreadystatechange = () => {
+        if (xhr.readyState === 4) {
+          sendResponse({responseText: xhr.responseText, status: xhr.status});
+        }
+      };
+      xhr.send();
+      return true; // 保持消息通道打开以供异步回应
+    }
+  });
