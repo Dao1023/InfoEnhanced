@@ -6,7 +6,6 @@ $(function () {
     let p = document.getElementById("text-strength");
     let cha = bar.offsetWidth - box.offsetWidth;
 
-
     // 用chrome.storage来读取adFilteringState
     chrome.storage.local.get(["adFilteringState", "filterStrength"], function (data) {
         let adFilteringState = data.adFilteringState;
