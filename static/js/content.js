@@ -45,6 +45,10 @@ $(function () {
     //     console.log(nodejieba.cut(text));
     // }
 
+    
+    _text = "這個布丁是在無聊的世界中找尋樂趣的一種不能吃的食物，喜愛動漫畫、遊戲、程式，以及跟世間脫節的生活步調。";
+    console.log(cut(_text));
+
     function removeAd(website) {
         let webName = website.split(".")[1];
         console.log(webName);
