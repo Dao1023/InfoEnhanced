@@ -14,8 +14,8 @@
     },
     "content_scripts": [
         {
-            "matches": ["https://www.baidu.com/s*", "https://www.zhihu.com/*"],
-            "js": ["/static/js/jquery-3.6.3.min.js", "/static/js/content.js"],
+            "matches": ["https://www.baidu.com/s*", "https://www.zhihu.com/*", "https://*.bilibili.com/*"],
+            "js": ["/static/js/jquery-3.6.3.min.js","/static/js/lodash.min.js" ,"/static/js/Bilibili Evolved.user.js", "/static/js/content.js"],
             "run_at": "document_start"
         }
     ],
@@ -29,6 +29,7 @@
         "activeTab",
         "tabs",
         "https://www.baidu.com/s*",
-        "https://www.zhihu.com/*"
+        "https://www.zhihu.com/*",
+        "https://*.bilibili.com/*"
     ]
 }

@@ -1,7 +1,3 @@
-// Browser Filering
-// v1.0
-// 2023.3.8
-
 $(function () {
     const adFilteringButton = document.getElementById("adFiltering");
     let box = document.getElementsByClassName("box")[0];
@@ -9,7 +5,6 @@ $(function () {
     let all = document.getElementsByClassName("all")[0];
     let p = document.getElementById("text-strength");
     let cha = bar.offsetWidth - box.offsetWidth;
-
 
     // 用chrome.storage来读取adFilteringState
     chrome.storage.local.get(["adFilteringState", "filterStrength"], function (data) {
